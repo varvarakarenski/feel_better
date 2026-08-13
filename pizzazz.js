@@ -32,7 +32,7 @@ scrollButton.addEventListener('click', () => {
   scroll.classList.remove('show');
 });
 
-[1, 2, 3, 4, 5].forEach((n) => {
+[1, 2, 3].forEach((n) => {
   const storyButton = document.getElementById(`story${n}`);
   const storyScroll = document.getElementById(`story${n}-scroll`);
 
