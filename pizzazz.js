@@ -42,9 +42,9 @@ scrollButton.addEventListener('click', () => {
   });
 });
 
-document.querySelectorAll('.home-button').forEach((homeButton) => {
-  homeButton.addEventListener('click', () => {
+document.querySelectorAll('.back-button').forEach((backButton) => {
+  backButton.addEventListener('click', () => {
     document.querySelectorAll('.loot.show').forEach((el) => el.classList.remove('show'));
-    chestButton.style.display = '';
+    stories.classList.add('show');
   });
 });

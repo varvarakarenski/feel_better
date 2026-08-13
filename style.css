@@ -63,16 +63,23 @@ button {
 
 .scroll-text {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 70%;
+  top: 41%;
+  left: 53%;
+  transform: translate(-50%, -50%) scale(0);
+  width: 40%;
   margin: 0;
   text-align: center;
   color: #3b2412;
   pointer-events: none;
   font-family: 'Pixelify Sans', sans-serif;
   font-size: clamp(0.7rem, 1.8vw, 1.3rem);
+  animation: text-pop 0.4s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+}
+
+@keyframes text-pop {
+  to {
+    transform: translate(-50%, -50%) scale(1);
+  }
 }
 
 .scroll-text.scrollable {
@@ -83,8 +90,8 @@ button {
 
 .chest-item {
   display: block;
-  width: 35vw;
-  max-width: 400px;
+  width: 50vw;
+  max-width: 800px;
   min-width: 180px;
   image-rendering: pixelated;
   transform: scale(0);
@@ -117,16 +124,16 @@ button {
   gap: 16px;
 }
 
-.home-button {
+.back-button {
   background-image: url('pixel-button.png');
   background-size: 100% 100%;
   image-rendering: pixelated;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 14px 32px;
+  padding: 26px 56px;
   color: #3b2412;
   font-family: 'Pixelify Sans', sans-serif;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   white-space: nowrap;
 }
