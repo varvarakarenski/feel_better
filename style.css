@@ -132,30 +132,3 @@ button {
   max-width: 90vw;
 }
 
-.back-button {
-  display: none;
-  position: fixed;
-  top: 24px;
-  left: 24px;
-  z-index: 3;
-}
-
-.back-button.show {
-  display: block;
-}
-
-.back-button-bg {
-  display: block;
-  width: 100px;
-  image-rendering: pixelated;
-}
-
-.back-arrow {
-  position: absolute;
-  top: 35%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: #3b2412;
-  font-family: 'Pixelify Sans', sans-serif;
-  font-size: 1.4rem;
-}

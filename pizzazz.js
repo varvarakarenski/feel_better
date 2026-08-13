@@ -16,7 +16,6 @@ const scroll = document.getElementById('scroll');
 const scrollButton = document.getElementById('scrollButton');
 const blankPage = document.getElementById('blank-page');
 const stories = document.getElementById('stories')
-const backButton = document.getElementById('backButton');
 
 chestButton.addEventListener('click', () => {
   closedScroll.classList.add('show');
@@ -40,12 +39,5 @@ scrollButton.addEventListener('click', () => {
   storyButton.addEventListener('click', () => {
     storyScroll.classList.add('show');
     stories.classList.remove('show');
-    backButton.classList.add('show');
   });
-});
-
-backButton.addEventListener('click', () => {
-  document.querySelectorAll('.loot.show').forEach((el) => el.classList.remove('show'));
-  stories.classList.add('show');
-  backButton.classList.remove('show');
 });
