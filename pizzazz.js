@@ -32,3 +32,19 @@ scrollButton.addEventListener('click', () => {
   scroll.classList.remove('show');
 });
 
+[1, 2, 3, 4, 5].forEach((n) => {
+  const storyButton = document.getElementById(`story${n}`);
+  const storyScroll = document.getElementById(`story${n}-scroll`);
+
+  storyButton.addEventListener('click', () => {
+    storyScroll.classList.add('show');
+    stories.classList.remove('show');
+  });
+});
+
+document.querySelectorAll('.home-button').forEach((homeButton) => {
+  homeButton.addEventListener('click', () => {
+    document.querySelectorAll('.loot.show').forEach((el) => el.classList.remove('show'));
+    chestButton.style.display = '';
+  });
+});

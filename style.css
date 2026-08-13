@@ -75,7 +75,14 @@ button {
   font-size: clamp(0.7rem, 1.8vw, 1.3rem);
 }
 
+.scroll-text.scrollable {
+  max-height: 45%;
+  overflow-y: auto;
+  pointer-events: auto;
+}
+
 .chest-item {
+  display: block;
   width: 35vw;
   max-width: 400px;
   min-width: 180px;
@@ -101,4 +108,25 @@ button {
     width: 150px;
     min-width: 100px;
     max-width: 180px;
+}
+
+.scroll-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.home-button {
+  width: 140px;
+  height: 44px;
+  background-image: url('pixel-button.png');
+  background-size: 100% 100%;
+  image-rendering: pixelated;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #3b2412;
+  font-family: 'Pixelify Sans', sans-serif;
+  font-size: 1rem;
 }
