@@ -132,3 +132,21 @@ button {
   max-width: 90vw;
 }
 
+.back-button {
+  display: none;
+  position: fixed;
+  top: 24px;
+  left: 24px;
+  z-index: 3;
+}
+
+.back-button.show {
+  display: block;
+}
+
+.back-button-bg {
+  display: block;
+  width: 160px;
+  image-rendering: pixelated;
+}
+
