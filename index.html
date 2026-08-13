@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <video autoplay muted loop playsinline class="bg-video">
+        <source src="https://drive.google.com/file/d/1Bm8UvaxIChmSYnd-NV4QIZnba38JhngD/view?usp=sharing" type="video/mp4">
+    </video>
+
+    <button id="chestButton"><img src="chest.png" alt="Chest" class="chest-popup"></button>
+
+    <div id="closed-scroll" class="loot">
+        <button id="closedScrollButton"><img src="closed-scroll.png" alt="Closed scroll" class="chest-item"></button>
+    </div>
+
+    <div id="scroll" class="loot">
+        <button id="scrollButton" class="scroll-wrap">
+            <img src="scroll.png" alt="Scroll" class="chest-item">
+            <p class="scroll-text">
+                Hi Luca! I figured I'd keep you posted on my antics 
+                while you're recovering, and I wanted to do it in a way that might 
+                make you smile. 
+            </p>
+        </button>
+    </div>
+
+    <div id="stories" class="loot stories">
+        <button id="story1"><img src="scroll.png" class="chest-item"></button>
+        <button id="story2"><img src="scroll.png" class="chest-item"></button>
+        <button id="story3"><img src="scroll.png" class="chest-item"></button>
+        <button id="story4"><img src="scroll.png" class="chest-item"></button>
+        <button id="story5"><img src="scroll.png" class="chest-item"></button>
+    </div>
+
+    <script src="pizzazz.js"></script>
+</body>
+</html>
